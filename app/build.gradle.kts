@@ -1,5 +1,3 @@
-import org.gradle.kotlin.dsl.aboutLibraries
-
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.android.hilt)
@@ -137,6 +135,9 @@ dependencies {
     implementation(libs.ktor.client.okhttp)
     implementation(libs.ktor.logging)
     implementation(libs.ktor.serialization)
+
+    // Security - EncryptedSharedPreferences for token storage
+    implementation("androidx.security:security-crypto:1.1.0")
 
     // License page UI
     implementation(libs.auto.license.core)
