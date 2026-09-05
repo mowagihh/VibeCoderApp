@@ -7,4 +7,8 @@ enum class ClientType {
     KIMI,
     MINIMAX,
     DEEPSEEK,
+    GEMINI,
+    OPENROUTER,
+    NVIDIA,
+    CUSTOM,
 }
